@@ -6,7 +6,7 @@ export default function FooterSection() {
         <div className="h-auto p-4 md:p-8 flex flex-col justify-start items-start gap-8">
           {/* Brand Section */}
           <div className="self-stretch flex justify-start items-center gap-3">
-            <div className="text-center text-[#49423D] text-xl font-semibold leading-4 font-sans">BERT</div>
+            <div className="text-center text-[#49423D] text-xl font-semibold leading-4 font-sans">StructBERT</div>
           </div>
           <div className="text-[rgba(73,66,61,0.90)] text-sm font-medium leading-[18px] font-sans">
             Coding made effortless
@@ -69,13 +69,13 @@ export default function FooterSection() {
                 Pricing
               </div>
               <div className="text-[#49423D] text-sm font-normal leading-5 font-sans cursor-pointer hover:text-[#37322F] transition-colors">
-                Integrations
+                Algorithm Library
               </div>
               <div className="text-[#49423D] text-sm font-normal leading-5 font-sans cursor-pointer hover:text-[#37322F] transition-colors">
-                Real-time Previews
+                Interactive Examples
               </div>
               <div className="text-[#49423D] text-sm font-normal leading-5 font-sans cursor-pointer hover:text-[#37322F] transition-colors">
-                Multi-Agent Coding
+                Complexity Analysis
               </div>
             </div>
           </div>

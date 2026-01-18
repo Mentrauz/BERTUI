@@ -9,34 +9,34 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is BERT and who is it for?",
+    question: "What is StructBERT and who is it for?",
     answer:
-      "BERT is a comprehensive algorithm automation platform designed for businesses that need custom contract management. It's perfect for SaaS companies, service providers, and enterprises looking to streamline their billing processes.",
+      "StructBERT is a specialized AI assistant for Data Structures and Algorithms. It's designed for students, developers, and professionals who want to master algorithmic concepts, understand complexity analysis, and learn efficient coding techniques.",
   },
   {
-    question: "How does the custom contract billing work?",
+    question: "How does StructBERT help with algorithm analysis?",
     answer:
-      "Our platform automatically processes your custom contracts, calculates billing amounts based on your specific terms, and generates invoices. You can set up complex pricing structures, usage-based billing, and custom billing cycles.",
+      "StructBERT provides precise Big O notation analysis, step-by-step algorithm breakdowns, and performance comparisons. You can explore different approaches to the same problem and understand trade-offs between time and space complexity.",
   },
   {
-    question: "Can I integrate BERT with my existing tools?",
+    question: "Can I get code implementations for data structures?",
     answer:
-      "Yes! BERT integrates seamlessly with popular CRM systems, accounting software, and payment processors. We support APIs and webhooks for custom integrations with your existing workflow.",
+      "Absolutely! StructBERT offers clean, well-documented implementations of fundamental data structures like arrays, linked lists, trees, graphs, heaps, and hash tables, along with common algorithms and their applications.",
   },
   {
-    question: "What kind of support do you provide?",
+    question: "What programming languages does StructBERT support?",
     answer:
-      "We offer 24/7 customer support, dedicated account managers for enterprise clients, comprehensive documentation, and onboarding assistance to help you get started quickly.",
+      "StructBERT provides code examples and explanations that can be adapted to any programming language. We focus on algorithmic concepts and design patterns that are language-agnostic, with implementations that demonstrate best practices.",
   },
   {
-    question: "Is my data secure with BERT?",
+    question: "How does StructBERT handle complex algorithmic questions?",
     answer:
-      "Absolutely. We use enterprise-grade security measures including end-to-end encryption, SOC 2 compliance, and regular security audits. Your data is stored in secure, redundant data centers.",
+      "StructBERT specializes in DS&A topics including sorting algorithms, search techniques, graph algorithms, dynamic programming, and advanced data structures. We provide academic-level explanations with practical coding examples.",
   },
   {
-    question: "How do I get started with BERT?",
+    question: "How do I get started with StructBERT?",
     answer:
-      "Getting started is simple! Sign up for our free trial, connect your existing systems, and our onboarding team will help you set up your first custom billing workflow within 24 hours.",
+      "Getting started is simple! Sign up for your account and start asking questions about any DS&A topic. Whether you're preparing for interviews, learning new concepts, or optimizing existing code, StructBERT is here to help.",
   },
 ]
 
@@ -71,9 +71,9 @@ export default function FAQSection() {
             Frequently Asked Questions
           </div>
           <div className="w-full text-[#605A57] text-base font-normal leading-7 font-sans">
-            Explore your data, build your dashboard,
+            Master Data Structures & Algorithms with
             <br className="hidden md:block" />
-            bring your team together.
+            precise analysis and clean implementations.
           </div>
         </div>
 

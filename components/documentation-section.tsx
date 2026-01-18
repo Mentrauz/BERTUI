@@ -21,18 +21,18 @@ export default function DocumentationSection() {
 
   const cards = [
     {
-      title: "Plan your schedules",
-      description: "Explore your data, build your dashboard,\nbring your team together.",
+      title: "Algorithm Design Patterns",
+      description: "Master fundamental algorithmic techniques like\ndivide-and-conquer, greedy algorithms, and dynamic programming.",
       image: "/modern-dashboard-interface-with-data-visualization.jpg",
     },
     {
-      title: "Data to insights in minutes",
-      description: "Transform raw data into actionable insights\nwith powerful analytics tools.",
+      title: "Data Structure Mastery",
+      description: "Deep dive into arrays, linked lists, trees, graphs,\nand advanced structures with implementation details.",
       image: "/analytics-dashboard.png",
     },
     {
-      title: "Collaborate seamlessly",
-      description: "Work together in real-time with your team\nand share insights instantly.",
+      title: "Complexity Analysis",
+      description: "Understand Big O notation and learn to analyze\nalgorithm efficiency for optimal performance.",
       image: "/team-collaboration-interface-with-shared-workspace.jpg",
     },
   ]
@@ -63,12 +63,12 @@ export default function DocumentationSection() {
             text="Platform Features"
           />
           <div className="self-stretch text-center flex justify-center flex-col text-[#49423D] text-3xl md:text-5xl font-semibold leading-tight md:leading-[60px] font-sans tracking-tight">
-            Streamline your algorithms
+            Master Algorithm Design
           </div>
           <div className="self-stretch text-center text-[#605A57] text-base font-normal leading-7 font-sans">
-            Automate your algorithms with seamless automation
+            Learn systematic approaches to algorithm design and analysis
             <br />
-            for every custom contract, tailored by BERT.
+            with comprehensive coverage of classic and modern techniques.
           </div>
         </div>
       </div>
