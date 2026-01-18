@@ -11,14 +11,38 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export default function LoginPage() {
     const [isLoading, setIsLoading] = useState(false)
+    const [error, setError] = useState<string | null>(null)
 
     async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
         setIsLoading(true)
+        setError(null)
 
-        setTimeout(() => {
+        const formData = new FormData(event.currentTarget)
+        const email = formData.get("email") as string
+        const password = formData.get("password") as string
+
+        try {
+            const response = await fetch("/api/auth/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password }),
+            })
+
+            const data = await response.json()
+
+            if (!response.ok) {
+                throw new Error(data.error || "Login failed")
+            }
+
+            // Handle successful login
+            console.log("Login successful:", data)
+            window.location.href = "/chat" // Redirect to chat page
+        } catch (err: any) {
+            setError(err.message)
+        } finally {
             setIsLoading(false)
-        }, 3000)
+        }
     }
 
     return (
@@ -61,12 +85,18 @@ export default function LoginPage() {
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={onSubmit} className="space-y-4">
+                            {error && (
+                                <div className="p-3 bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg font-sans">
+                                    {error}
+                                </div>
+                            )}
                             <div className="space-y-2">
                                 <Label htmlFor="email" className="text-sm font-medium text-[#37322F] font-sans">
                                     Email
                                 </Label>
                                 <Input
                                     id="email"
+                                    name="email"
                                     type="email"
                                     placeholder="name@example.com"
                                     required
@@ -87,6 +117,7 @@ export default function LoginPage() {
                                 </div>
                                 <Input
                                     id="password"
+                                    name="password"
                                     type="password"
                                     required
                                     className="bg-white border-[rgba(55,50,47,0.12)] focus:ring-[#37322F]/10 focus:border-[#37322F] rounded-lg"
